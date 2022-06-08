@@ -1,0 +1,363 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 414px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.left_btn{
+    position: absolute;
+    top: 65%;
+    left: 0;
+}
+.right_btn{
+    position: absolute;
+    top: 65%;
+    right: 0;
+}
+.slider{
+    position: relative;
+}
+button{
+    border: none;
+    background:inherit;
+    animation: zoomOut 1s;
+}
+.link{
+    position: absolute;
+    bottom: 50px;
+    left: 33%;
+    animation: opacityLink 3s;
+}
+.item{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    animation: opacity 1s;
+}
+.item-head_mint{
+    animation: scrollDown 1s;
+}
+.product{
+    background: none;
+    position: absolute;
+    top: 70px;
+    left: 90px;
+    z-index: 0;
+}
+.product img{
+    width: 70%;
+    animation: scrollLeft 1s;
+}
+.bg_elements img{
+    width:50%;
+    animation: zoomOut .5s;
+}
+
+
+
+/* mint */
+.mint{
+background-image: url("Twinings_Assets/peppermint-\ BG.jpg");
+position: relative;
+}
+.mint_new{
+    position: absolute;
+    left: 40px;
+    animation: scrollDown 1.7s;
+}
+.mint_info{
+    position: absolute;
+    top: 110px;
+    left: 30px;
+    animation: zoomOutText 1.5s ;
+    padding: 20px;
+}
+
+.mint_el_1{
+    position: absolute;
+    top: 20px;
+    left: -80px;
+}
+.mint_el_2{
+    position: absolute;
+    top: 30px;
+    right: -120px;
+}
+.mint_el_3{
+    position: absolute;
+    top: 300px;
+    right: 30px;
+}
+.mint_el_4{
+    position: absolute;
+    top: 200px;
+    right: -50px;
+}
+.mint_el_5{
+    position: absolute;
+    top: 170px;
+    right: 0;
+}
+.mint_el_6{
+    position: absolute;
+    top: 350px;
+    right: -150px;
+}
+
+
+/* raspberry */
+.raspberry{
+background-image: url("Twinings_Assets/raspberry\ -\ BG.jpg");
+position: relative;
+}
+.raspberry_new{
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+.rasp_el_1{
+    position: absolute;
+    top: -50px;
+    left:-30px;
+}
+.rasp_el_2{
+    position: absolute;
+    top: 30px;
+    right: -5px;
+}
+.rasp_el_3{
+    position: absolute;
+    top: 80px;
+    right:-90px;
+}
+.rasp_el_4{
+    position: absolute;
+    top: 190px;
+    right: 40px;
+}
+.rasp_el_5{
+    position: absolute;
+    top: 220px;
+    right: 100px;
+}
+.rasp_el_6{
+    position: absolute;
+    top: 60px;
+    right: 220px;
+}
+.rasp_el_7{
+    position: absolute;
+    top: 0;
+    right: -130px;
+}
+.rasp_el_8{
+    position: absolute;
+    top: 180px;
+    right: -10px;
+}
+.rasp_el_9{
+    position: absolute;
+    top: 120px;
+    left: -40px;
+}
+
+
+/* peach */
+.peach{
+background-image: url("Twinings_Assets/peach\ -\ BG.jpg");
+position: relative;
+}
+.peach_new{
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+.peach_el_1{
+    position: absolute;
+    top: 0;
+    right: -60px;
+}
+.peach_el_2{
+    position: absolute;
+    top: 190px;
+    left: 0; 
+}
+
+
+
+
+@keyframes scrollDown{
+    0%{
+        
+        transform: translateY(-500px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes zoomOut{
+    0%{
+   
+transform: scale(0);
+    }
+    100%{
+       
+        transform: scale(1);
+    }
+}
+@keyframes zoomOutText{
+    0%{
+   
+transform: scale(0);
+    }
+    50%{
+        transform: scale(0);
+    }
+    100%{
+       
+        transform: scale(1);
+    }
+}
+@keyframes scrollLeft{
+    0%{
+   
+transform: translateX(500px);
+    }
+    100%{
+       
+      transform: translateX(0);
+    }
+}
+@keyframes opacity{
+    0%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes opacityLink{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+@media (max-width:375px){
+    .mint_el_1{
+        position: absolute;
+        top: 20px;
+        left: -60px;      
+    }
+    .mint_el_2{
+        position: absolute;
+        top: 30px;
+        right: -130px;  
+    }
+    .mint_el_3{
+        position: absolute;
+        top: 270px;
+        right: 20px;     
+    }
+    .mint_el_4{
+        position: absolute;
+        top: 200px;
+        right: -50px;       
+    }
+    .mint_el_5{
+        position: absolute;
+        top: 150px;
+        right: -30px;       
+    }
+    .mint_el_6{
+        position: absolute;
+        top: 320px;
+        right: -150px;
+       
+    }
+    .rasp_el_1{
+        position: absolute;
+        top: -50px;
+        left:-30px;
+    }
+    .rasp_el_2{
+        position: absolute;
+        top: 30px;
+        right: -30px;
+    }
+    .rasp_el_3{
+        position: absolute;
+        top: 70px;
+        right:-100px;
+    }
+    .rasp_el_4{
+        position: absolute;
+        top: 170px;
+        right: 30px;
+    }
+    .rasp_el_5{
+        position: absolute;
+        top: 200px;
+        right: 80px;
+    }
+    .rasp_el_6{
+        position: absolute;
+        top: 50px;
+        right: 180px;
+    }
+    .rasp_el_7{
+        position: absolute;
+        top: 0;
+        right: -160px;
+    }
+    .rasp_el_8{
+        position: absolute;
+        top: 180px;
+        right:-20px;
+    }
+    .rasp_el_9{
+        position: absolute;
+        top: 120px;
+        left: -50px;
+     
+    }
+    .peach_el_1{
+        position: absolute;
+        top: 0;
+        right: -80px;
+    }
+    .peach_el_2{
+        position: absolute;
+        top: 175px;
+        left: 0; 
+    }
+    .link img{
+        width: 50%;
+    
+    }
+}
+@media screen and (orientation: landscape) {
+ .slider{
+     display: none;
+ }
+ .container{
+     height: 100vh;
+     background-image: url("Twinings_Assets/not_available.png");
+     background-repeat: no-repeat;
+     background-position: center;
+ }
+}
+
